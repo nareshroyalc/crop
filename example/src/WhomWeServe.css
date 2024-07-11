@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.whom-we-serve-section {
+  background-color: rgb(29, 98, 28);
+  color: #fff;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 500px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  max-width: (30px,3vw);
+}
+
+.circle-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border: 5px solid white; /* Initial border color */
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.circle-title.top {
+  top: -30px;
+}
+
+.circle-title.bottom {
+  bottom: -30px;
+}
+
+.circle-title.left {
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.circle-list {
+  list-style: none; /* Remove underline */
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+  animation: slide 0.5s ease-in-out forwards; /* Slide animation for list items */
+}
+
+.circle-list li {
+  margin-bottom: 10px;
+  /* transform: rotate(0deg); Ensure list items do not rotate */
+}
+
+.learn-more-btn {
+  margin-top: 20px;
+  background-color: #008037;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 700px;
+}
+
+.learn-more-btn:hover {
+  background-color: #005f2e;
+}

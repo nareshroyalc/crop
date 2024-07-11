@@ -1,0 +1,100 @@
+/* CropForm.css */
+body {
+  margin: 0;
+}
+
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  background-image: url(crop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+
+.crop-form-container {
+  width: 100%;
+  max-width: 600px; /* Adjust as necessary */
+}
+
+.crop-form {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff; /* Set background color of the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+}
+
+.crop-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure the form group takes the full width */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  background-color: #fff; /* Ensure the suggestions are on a solid background */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestions li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.response-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crop-item {
+  margin-right: 10px;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

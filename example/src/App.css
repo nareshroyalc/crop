@@ -1,0 +1,77 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.crop-form-container {
+  flex: 1; /* Ensure it takes available space */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.hero-section {
+    background: url('./crop.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 150px 0;
+    position: relative;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .img-fluid {
+    width: 50px;
+    height: auto;
+    color:green;
+    margin-left: 30%;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  .navbar{
+    position: absolute;
+    top:0;
+    left:100px;
+    right:0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Take remaining space */
+    padding-bottom: 60px; /* Adjust as necessary to prevent content from being obscured by footer */
+  }
+  
+  /* Example footer styling (adjust as per your Footer.css) */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:100px;
+  }
+  
+  
